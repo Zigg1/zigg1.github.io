@@ -58,14 +58,11 @@ h3 {
   animation: cursor-blink 0.5s infinite;
 }
 #navbar {
-  display: grid;
-  width: 100%;
+  display: inline-grid;
+  width: 70%;
   grid-auto-flow: column;
   grid-auto-columns: auto;
-  justify-content: center;
-}
-#navbar > a {
-  margin: 10px;
+  justify-content: space-evenly;
 }
 #navbar > a > input {
   color: var(--light-color3);
@@ -74,6 +71,9 @@ h3 {
   background-color: var(--dark-color1);
   border: none;
   padding: 2px 5px 2px 5px;
+}
+#navbar > a > input:hover {
+  cursor: pointer;
 }
 #header-divider {
   display: inline-block;
