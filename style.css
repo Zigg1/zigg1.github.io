@@ -22,9 +22,13 @@ h3 {
   font-size: 25px;
   color: var(--light-color2);
 }
+#projects {
+  text-align: center;
+}
 /* removed box because it is impossible to get even height for all boxes */
 .projectbox {
   color: var(--light-color1);
+  width: 320px;
   padding: 10px;
   margin: 20px;
 }
@@ -99,9 +103,9 @@ h3 {
   margin-left: -1em;
 }
 #projectcontainer {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: baseline;
   flex-flow: row wrap;
 }
