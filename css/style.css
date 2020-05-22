@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --dark-color1: #363538;
+  --dark-color2: #8d8c8a;
+  --light-color1: #f6f6f6;
+  --light-color2: #408697;
+  --light-color3: #52d6f4;
+}
+@font-face {
+  font-family: 'Roboto Light';
+  src: url("fonts/RobotoLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto Medium";
+  src: url("fonts/RobotoMedium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("fonts/RobotoRegular.ttf") format("truetype");
+}
+body {
+  text-align: center;
+  font-family: 'Roboto Light';
+  font-size: 20px;
+  background-color: var(--dark-color1);
+  color: var(--light-color1);
+  display: grid;
+  grid-template-columns: auto;
+  gap: 50px;
+}
+h1, h2 {
+  font-family: 'Roboto Medium';
+}
+h3 {
+  font-family: 'Roboto Regular';
+  font-size: 30px;
+  color: var(--light-color2);
+}
+#projects {
+  text-align: center;
+}
+/* removed box because it is impossible to get even height for all boxes */
+.projectbox {
+  color: var(--light-color1);
+  width: 320px;
+  padding: 10px;
+  margin: 20px;
+}
+.projectbox > a {
+  color: var(--light-color3);
+}
+.text-highlight {
+  color: var(--light-color3);
+}
+.text-highlight-2 {
+  color: var(--light-color2);
+}
+#spacestationscreenshot, #weatherscreenshot {
+  width: 300px;
+  height: auto;
+  display: inline-block;
+}
+#header-text{
+  font-size: 30px;
+  color: var(--light-color2);
+  padding: 20px 0 20px 0;
+}
+@keyframes cursor-blink{
+  0% {background-color: var(--light-color3);}
+  50% {background-color: var(--dark-color1);}
+  100% {background-color: var(--light-color3);}
+}
+#square-cursor-animate {
+  display: inline-block;
+  height: 30px;
+  width: 14px;
+  background-color: var(--light-color3);
+  margin-left: 5px;
+  animation: cursor-blink 0.5s infinite;
+}
+#navbar {
+  display: inline-grid;
+  width: 80%;
+  grid-auto-flow: column;
+  grid-auto-columns: auto;
+  justify-content: space-evenly;
+}
+#navbar > a > input {
+  color: var(--light-color3);
+  text-decoration: underline;
+  font-family: 'Roboto Regular';
+  font-size: 30px;
+  background-color: var(--dark-color1);
+  border: none;
+  padding: 2px 5px 2px 5px;
+}
+#navbar > a > input:hover {
+  cursor: pointer;
+}
+#header-divider {
+  display: inline-block;
+  height: 2px;
+  width: 80%;
+  background-color: var(--light-color3);
+}
+#aboutme {
+  display: inline-block;
+  font-family: 'Roboto Regular';
+  font-size: 30px;
+  text-align: justify;
+  padding: 20px 40px 20px 30px;
+  margin-right: 50px;
+  background-color: var(--light-color1);
+  color: var(--dark-color1);
+  border-radius: 0 20px  20px 0;
+}
+#skillset > ul {
+  display: inline-block;
+  text-align: left;
+  list-style: none;
+}
+#skillset > ul > li::before {
+  content: "\2713";
+  color: var(--light-color3);
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+#projectcontainer {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  flex-flow: row wrap;
+}
+#contact {
+  margin-bottom: 30px;
+}
+#contact > p > a {
+  color: var(--light-color3);
+}
+@media screen and (max-width: 700px) {
+  #navbar {
+    width: 95%;
+  }
+  #aboutme {
+    text-align: left;
+  }
+}
