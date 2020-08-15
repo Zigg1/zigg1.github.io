@@ -63,10 +63,13 @@ h3 {
   height: auto;
   display: inline-block;
 }
-#header-text{
+#header-text {
   font-size: 30px;
   color: var(--light-color2);
   padding: 20px 0 20px 0;
+}
+#header-text > h2 {
+  margin-right: 40px;
 }
 @keyframes cursor-blink{
   0% {background-color: var(--light-color3);}
@@ -100,12 +103,6 @@ h3 {
 #navbar > a > input:hover {
   cursor: pointer;
 }
-#header-divider {
-  display: inline-block;
-  height: 2px;
-  width: 80%;
-  background-color: var(--light-color3);
-}
 #aboutme {
   display: inline-block;
   font-family: 'Roboto Regular';
@@ -117,12 +114,23 @@ h3 {
   color: var(--dark-color1);
   border-radius: 0 20px  20px 0;
 }
-#skillset > ul {
+#skillset {
+  align-items: center;
+}
+#skill-list-container {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  width: 300px;
+  margin-left: 30px;
+}
+#skill-list-container > ul {
   display: inline-block;
   text-align: left;
   list-style: none;
 }
-#skillset > ul > li::before {
+#skill-list-container > ul > li::before {
   content: "\2713";
   color: var(--light-color3);
   display: inline-block;
