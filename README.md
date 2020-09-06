@@ -1,3 +1,3 @@
 ## My Portfolio
 
-Javascript-free to load faster!
+Javascript-free in the name of short load times!
