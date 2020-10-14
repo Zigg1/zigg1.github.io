@@ -58,7 +58,7 @@ h3 {
 .text-highlight-2 {
   color: var(--light-color2);
 }
-#spacestationscreenshot, #weatherscreenshot {
+#spacestationscreenshot, #weatherscreenshot, #livechatscreenshot {
   width: 300px;
   height: auto;
   display: inline-block;
