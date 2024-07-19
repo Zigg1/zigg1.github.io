@@ -6,7 +6,7 @@ import node from "@astrojs/node";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "www.andrewziegler.com"
+  site: "www.andrewziegler.com",
   integrations: [tailwind(), icon()],
   markdown: {
     remarkPlugins: [remarkReadingTime],
